@@ -1,0 +1,110 @@
+.player {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;  
+
+
+    &.active .player__splash {
+        display: none;
+    }
+
+    &.active .player__playback {
+        margin-left: 13px;
+        margin-top: -2px;
+        width: 739px;
+        height: 4px;
+
+        &:before {
+            content: "";
+            width: 739px;
+            height: 4px;
+            margin-bottom: -4px;
+            background: #626262;
+            display: flex;
+        }
+    }
+
+    &.paused {
+        .player__start {
+            content: "";
+                display: block;
+                position: absolute;
+                width: 2px;
+                padding: 0px 4px 29px;
+                top: 2px;
+                left: 8px;
+                bottom: 0;
+                background: #fff;
+
+            &:after,
+            &:before {
+                content: "";
+                padding: 1px 1px 28px;
+                display: block;
+                position: absolute;
+                width: 5px;
+                left: 13px;
+                top: 0;
+                bottom: 0;
+                background: #fff;
+            } 
+        }      
+    }
+}
+
+.player__splash {
+    position: absolute;
+    width: 940px;
+    height: 391px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/pictures/normal__player.png) center, no-repeat;
+    background-size: 940px, 391px;
+    cursor: pointer;
+}
+
+.player__controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 390px;
+    height: 35px;
+    background: #3e3e3e;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.player__start {
+    width: 10.92px;
+    height: 20.95px;
+    top: 8.97px;
+    left: 16.95px;
+    background: url(./img/pictures/start.png);
+}
+
+.player__playback {
+    margin-left: 13px;
+    margin-top: 14px;
+}
+
+.player__playback-button {
+    border-radius: 50px;
+    border: none;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    position: absolute;
+    background: #626262;
+    transform: translate(-50%, -50%);
+    top: 18px;
+    left: 0;
+    margin-left: 43px;
+}

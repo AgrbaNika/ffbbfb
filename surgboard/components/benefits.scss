@@ -1,0 +1,28 @@
+.benefits {
+    display: flex;
+    list-style: none;
+
+    @include phones {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+
+.benefits__item {
+    flex: 1;
+    margin: 0 3%;
+
+    @include phones {
+        padding: 0;
+        margin-bottom: rem(19px);
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

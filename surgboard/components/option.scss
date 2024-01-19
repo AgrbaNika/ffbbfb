@@ -1,0 +1,38 @@
+.option {
+    margin-bottom: -49px;
+    background-color: #3A587E;
+    border-radius: 4px;
+    width: 91px;
+    height: 91px;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.option__open {
+    display: none;
+    border-radius: 5px;
+    border-color: rgda(225,225,225,949);
+    width: 16.75rem;
+    position: absolute;
+    top: 0;
+    right: 5.3125rem
+}
+
+.options__title {
+    margin-left: 6px;
+    font-weight: 700;
+    font-size: 12.01px;
+    align-items: center;
+    color: #fff;
+    margin-top: 3px;
+}
+
+.option__img {
+    width: 38px;
+    height: 38px;
+    margin-left: 25px;
+    margin-top: 22px;
+}

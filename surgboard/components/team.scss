@@ -1,0 +1,41 @@
+.team {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.team__item {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: center;
+    margin-right: 1.25rem;
+    max-width: 14.44444rem;
+    position: relative;
+}
+
+.team__member {
+    height: 18rem;
+    margin-bottom: 1.25rem;
+}
+
+.team__title {
+    font-size: 1.3137rem;
+    font-weight: 700;
+    border: transparent;
+    background: #fff;
+    color: #323232;
+    display: inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+}
+
+.team__content {
+    overflow: hidden;
+    transition: height .3s;
+    height: 0;
+    color: #323232;
+}
+
+.team__content-block {
+    padding-bottom: 0.3125rem;
+}

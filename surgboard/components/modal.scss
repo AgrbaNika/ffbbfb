@@ -1,0 +1,39 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &.error-modal {
+        .modal__content {
+            color: red;
+        }
+    }
+
+    &.fancybox-content {
+        padding:  0 !important;
+    }
+
+    .fancybox-button  {
+        display: none;
+    }
+
+}
+
+    .modal__container {
+        background-image: url(../img/pictures/cta-open.png);
+        background-repeat: no-repeat;
+        background-size: 309px 176px;
+        background-position: center;
+        padding: 345px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .modal__content {
+        margin-bottom: 15px;
+        color: #000;
+    }
